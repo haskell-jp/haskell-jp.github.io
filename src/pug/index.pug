@@ -22,5 +22,25 @@ html(lang="ja")
       | #{data.title}
   body
     header.header
+      .header_background
+        .header_background_container
+          .header_background_core
+        .header_background_back
+      .header_logo
+        .header_logo_core
+      h1.header_description
+        span
+          | #{data.description}
     main.main
+      .content
+        h2.content-title
+          | コンテンツ
+        .content-body
+          | ...
+      .content
+        h2.content-title
+          | コンテンツ
+        .content-body
+          | ...
     footer.footer
+      | © 2017- haskell.jp
