@@ -41,14 +41,6 @@ a {
       width: 100%;
       max-width: calc((100vh - #{$header-bottom}) * 2560 / 1920);
       max-height: calc(100vh - #{$header-bottom});
-
-      .header_background_core {
-        background-image: url("../img/main.svg");
-        background-size: contain;
-        background-position: center center;
-        background-repeat: no-repeat;
-        padding-top: calc(100% * 1920 / 2560);
-      }
     }
 
     .header_background_back {
