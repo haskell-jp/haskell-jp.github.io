@@ -160,9 +160,13 @@ if (TARGET_ENV === 'production') {
 
     plugins: [
       new CopyWebpackPlugin([
-        // {
-        //   from: 'src/favicon.ico'
-        // },
+        {
+          from: 'src/img/logo.svg',
+          to: 'img/'
+        },
+        {
+          from: 'src/img/favicon.ico',
+        },
       ]),
 
       // Extract CSS into a separate file
