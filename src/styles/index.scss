@@ -1,0 +1,28 @@
+@import "./_reset";
+
+$sp-size: 600px;
+$tablet-size: 960px;
+$font-color: #333;
+$font-accent-color: #e66;
+
+body {
+  font-size: 16px;
+  line-height: 1;
+  font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+}
+
+a {
+  color: $font-accent-color;
+}
+
+@media (min-width: $sp-size) {
+  body {
+    font-size: calc(0.5vw + 13px);
+  }
+}
+
+@media (min-width: $tablet-size) {
+  body {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,26 @@
+- var data = htmlWebpackPlugin.options.data
+doctype html
+html(lang="ja")
+  head
+    meta(content="IE=edge" http-equiv="X-UA-Compatible")
+    meta(content="text/html; charset=UTF-8" http-equiv="Content-Type")
+    meta(content="width=device-width,initial-scale=1" name="viewport")
+    meta(name="description" content=data.description)
+    meta(property="og:title" content=data.title)
+    meta(property="og:url" content=data.url)
+    meta(property="og:image" content="img/logo.svg")
+    meta(property="og:site_name" content=data.url)
+    meta(property="og:description" content=data.description)
+    meta(property="og:locale" content="ja_JP")
+    meta(property="og:type" content="website")
+    meta(name="keywords" content="Haskell")
+    meta(name="thumbnail" content="img/main.svg")
+    meta(name="twitter:description" content=data.description)
+    meta(name="twitter:image" content="img/main.svg")
+    meta(name="twitter:title" content=data.title)
+    title
+      | #{data.title}
+  body
+    header.header
+    main.main
+    footer.footer
