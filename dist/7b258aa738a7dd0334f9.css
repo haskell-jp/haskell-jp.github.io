@@ -1,0 +1,30 @@
+@charset "UTF-8";
+* {
+  color: #000;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  font-size: 1em;
+  list-style: none;
+  font-family: inherit;
+  line-height: 1.2; }
+
+body {
+  font-size: 16px;
+  line-height: 1;
+  font-family: 'Hiragino Kaku Gothic Pro', '\30D2\30E9\30AE\30CE\89D2\30B4   Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif; }
+
+a {
+  color: #e66; }
+
+@media (min-width: 600px) {
+  body {
+    font-size: calc(0.5vw + 13px); } }
+
+@media (min-width: 960px) {
+  body {
+    font-size: 20px; } }
