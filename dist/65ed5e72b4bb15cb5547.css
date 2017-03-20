@@ -1,0 +1,91 @@
+@charset "UTF-8";
+* {
+  color: #000;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  font-size: 1em;
+  list-style: none;
+  font-family: inherit;
+  line-height: 1.2; }
+
+body {
+  font-size: 16px;
+  line-height: 1;
+  font-family: 'Hiragino Kaku Gothic Pro', '\30D2\30E9\30AE\30CE\89D2\30B4   Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  color: #333; }
+
+a {
+  color: #e66; }
+
+@media (min-width: 600px) {
+  body {
+    font-size: calc(0.5vw + 13px); } }
+
+@media (min-width: 960px) {
+  body {
+    font-size: 20px; } }
+
+.header {
+  max-height: 100vh; }
+  .header .header_background {
+    position: relative; }
+    .header .header_background .header_background_container {
+      width: 100%;
+      max-width: calc((100vh - 6em) * 2560 / 1920);
+      max-height: calc(100vh - 6em); }
+      .header .header_background .header_background_container .header_background_core {
+        background-image: url(bba1199a1c4c0e13329f276e35f52ed0.svg);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding-top: calc(100% * 1920 / 2560); }
+    .header .header_background .header_background_back {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-image: url(307ab64bcb23197812c7b08eaff0e451.svg);
+      background-size: 100% 100%;
+      background-position: right center;
+      background-repeat: no-repeat;
+      height: 100%; }
+  .header .header_logo {
+    position: absolute;
+    max-width: 20em;
+    min-width: 14em;
+    width: 50%;
+    padding: 1em;
+    top: 0;
+    left: 0; }
+    .header .header_logo .header_logo_core {
+      background-image: url(88caafa42088ff799783f13183e18dac.svg);
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+      padding-top: calc(100% * 214 / 1706); }
+  .header .header_description {
+    padding: 0.4em;
+    min-height: 6em;
+    background-color: #ffd0b3; }
+    .header .header_description span {
+      font-size: 1.2em; }
+
+.main {
+  margin: 1em 0 1em 0;
+  padding: 0.6em; }
+  .main h2 {
+    font-size: 1.8em;
+    border-bottom: solid 2px #ff8da5;
+    border-top: solid 2px #ff8da5; }
+
+.footer {
+  background-color: #ffd0b3;
+  height: 3em;
+  padding: 1em;
+  text-align: center; }
