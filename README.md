@@ -5,7 +5,7 @@
 * [`yarn`](http://yarnpkg.com/)
     * (Make sure this is **NOT** the one `cmdtest` provides.)
     * Recommended version is `yarn >= 0.21`
-* [nodejs](https://nodejs.org/ja/)
+* [`nodejs`](https://nodejs.org/ja/)
     * Required version is `nodejs >= 6.x`
 
 ## Build
