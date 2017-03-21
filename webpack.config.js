@@ -167,6 +167,9 @@ if (TARGET_ENV === 'production') {
         {
           from: 'src/img/favicon.ico',
         },
+        {
+          from: 'src/CNAME',
+        },
       ]),
 
       // Extract CSS into a separate file
