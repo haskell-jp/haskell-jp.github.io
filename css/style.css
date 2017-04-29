@@ -21,3 +21,11 @@ body, .navbar {
 .navbar .navbar-nav > li > a:hover {
   color: #000;
 }
+
+footer .copyright {
+	text-align: center;
+}
+
+.notice-ga {
+  margin-top: 1em;
+}
