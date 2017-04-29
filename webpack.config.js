@@ -15,7 +15,7 @@ const ENV = {
   'url': process.env.URL || 'https://haskell.jp',
   'title': process.env.TITLE || '日本Haskellユーザーグループ',
   'description': process.env.DESCRIPTION || `
-日本Haskellユーザーグループは、日本におけるHaskellの普及を行う団体です。
+日本Haskellユーザーグループは、プログラミング言語Haskellの普及活動と、Haskellユーザーのサポートを行う組織です。  
   `,
 };
 

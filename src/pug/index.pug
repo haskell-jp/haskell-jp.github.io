@@ -36,16 +36,29 @@ html(lang="ja")
     main.main
       .content
         h2.content-title
-          | コンテンツ
+          a(href="/blog/") Blog
         .content-body
-          | ...
+          | Haskell-jpが運営するblogです。記事の寄稿を常時募集しております。#[a(href="https://github.com/haskell-jp/blog") こちらのリポジトリー]にPull Requestを送ってください！
       .content
         h2.content-title
-          | コンテンツ
+          a(href="https://wiki.haskell.jp") Wiki
         .content-body
-          | ...
+          | Haskell-jpが管理するWikiです。GitHubアカウントでログインすると、どなたでも編集できます。
+      .content
+        h2.content-title
+          // 相互リンクのバナーができ次第、相互リンクのリンク集に変える
+          a(href="http://haskell-jp.connpass.com") Events
+        .content-body
+          | Haskell-jpの公式connpassグループにて、随時募集しています。
+      .content
+        h2.content-title
+          a(href="https://github.com/haskell-jp/recipe-collection") Haskell レシピ集
+        .content-body
+          | Haskell のレシピ集、あるいは逆引き辞典です。
     footer.footer
-      | © 2017- haskell.jp
+      | © 2017 日本Haskellユーザーグループ
+      .notice-ga
+        | 当ウェブサイトでは、みなさんの利用状況を把握するために#[a(href="https://support.google.com/analytics/answer/6004245?hl=ja") Google Analytics]で情報を収集しています。集めた情報は統計的に処理した上で、当ウェブサイトの改善のための参考情報としてのみ使用されます。
     div.
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
