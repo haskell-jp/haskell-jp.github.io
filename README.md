@@ -1,24 +1,10 @@
 # haskell-jp official web page
 
-## Dependencies
-
-* [`yarn`](http://yarnpkg.com/)
-    * (Make sure this is **NOT** the one `cmdtest` provides.)
-    * Recommended version is `yarn >= 0.21`
-* [`nodejs`](https://nodejs.org/ja/)
-    * Required version is `nodejs >= 6.x`
-
-## Build
+## How to serve
 
 ```bash
-$ yarn && yarn run build
+$ stack install wai-app-static
+$ stack exec warp -- --host 0.0.0.0 --docroot .
 ```
 
-## Run dev server
-
-```bash
-$ yarn start
-:
-Project is running at http://localhost:8080/
-:
-```
+This is just an example way. But maybe easiest for Haskellers!
