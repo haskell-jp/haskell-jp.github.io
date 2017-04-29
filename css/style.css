@@ -1,0 +1,23 @@
+body, .navbar {
+  background-image: url('../img/background.png');
+  background-color: #F3DFBC;
+}
+
+.navbar {
+  border-color: #080808;
+}
+
+.navbar-brand > img {
+  width: 150px;
+  vertical-align: text-bottom;
+}
+
+.navbar .navbar-nav > li > a {
+  color: #777;
+  font-weight: bold;
+}
+
+.navbar .navbar-nav > li > a:focus,
+.navbar .navbar-nav > li > a:hover {
+  color: #000;
+}
