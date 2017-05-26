@@ -29,3 +29,7 @@ footer .copyright {
 .notice-ga {
   margin-top: 1em;
 }
+
+.text-center .caption {
+  text-align: left;
+}
