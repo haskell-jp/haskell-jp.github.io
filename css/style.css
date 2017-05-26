@@ -29,3 +29,15 @@ footer .copyright {
 .notice-ga {
   margin-top: 1em;
 }
+
+.text-center .caption {
+  text-align: left;
+}
+
+
+/* 数値は https://v4-alpha.getbootstrap.com/layout/overview/#responsive-breakpoints を参考に、タブレットの幅に合わせた */
+@media (min-width: 768px) {
+  .hero-feature .thumbnail {
+    height: 33em;
+  }
+}
