@@ -41,3 +41,7 @@ footer .copyright {
     height: 33em;
   }
 }
+
+.hero-feature .thumbnail img {
+    max-height: 230px;
+}
