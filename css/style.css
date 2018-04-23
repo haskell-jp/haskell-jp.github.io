@@ -1,15 +1,17 @@
-body, .navbar {
+body {
   background-image: url('../img/background.png');
   background-color: #F3DFBC;
 }
 
 .navbar {
+  background-color: #F3C677;
   border-color: #080808;
 }
 
 .navbar-brand > img {
   width: 150px;
-  vertical-align: text-bottom;
+  position: relative;
+  bottom: 30%;
 }
 
 .navbar .navbar-nav > li > a {
