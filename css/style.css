@@ -21,7 +21,7 @@ body {
 
 .navbar .navbar-nav > li > a:focus,
 .navbar .navbar-nav > li > a:hover {
-  color: #000;
+  color: #d66c79;
 }
 
 footer .copyright {
@@ -46,4 +46,21 @@ footer .copyright {
 
 .hero-feature .thumbnail img {
     max-height: 230px;
+}
+
+::selection {
+  color: white;
+  text-shadow: none;
+  background: #d66c79;
+}
+
+a:hover,
+a:focus {
+  color: #d66c79;
+}
+
+.btn-primary:hover,
+.btn-primary:active:hover {
+  background: #d66c79;
+  border-color: #fad9e1;
 }
