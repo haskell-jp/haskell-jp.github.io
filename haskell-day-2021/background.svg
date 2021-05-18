@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+  <defs>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="2" />
+    </filter>
+    <style>
+      .dots {
+        r: 20;
+        fill: rgb(235, 97, 56);
+        filter: url(#blur);
+      }
+    </style>
+    <pattern id="dots" x="0" y="0" height="100" width="173.205080757" patternUnits="userSpaceOnUse">
+      <circle class="dots" cx="86.6025403784" cy="0" />
+      <circle class="dots" cx="0" cy="50" />
+      <circle class="dots" cx="173.205080757" cy="50" />
+      <circle class="dots" cx="86.6025403784" cy="100" />
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="100%" height="100%" fill="rgb(246, 234, 210)" fill-opacity="0.6" />
+  <rect x="0" y="0" width="100%" height="100%" fill="url(#dots)" fill-opacity="0.6" />
+</svg>
