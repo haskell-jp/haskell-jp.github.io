@@ -99,7 +99,6 @@ article > h2 {
   text-align: center;
   color: var(--heavenly-blue);
   background-color: var(--warm-white-transparent);
-  background-image: url("background.svg");
   margin: 0;
   text-shadow: var(--warm-white) 0 0 10px;
 }
@@ -108,14 +107,17 @@ article > h2 {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+
 }
 #banner > div > h1 {
   font-size: 6em;
   font-weight: bold;
+  border-bottom: solid 8px var(--dawn-orange);
 }
 #banner > div > ul {
   font-size: 2.5em;
   margin-top: 5px;
+  border-bottom: solid 2px var(--dawn-orange);
 }
 #banner > div > ul > li {
   display: inline;
