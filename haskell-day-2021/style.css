@@ -5,6 +5,7 @@
   --blue-shadow: rgb(64, 75,183);
   --cloud-sea: rgb(205, 223, 239);
   --warm-white: rgb(246, 234, 210);
+  --warm-white-transparent: rgba(246, 234, 210, 0.6);
   --dark-blue-shadow: rgb(34, 39, 77);
   --sakulambda-pink: #fad9e1;
   --sakulambda-red: white;
@@ -97,7 +98,7 @@ article > h2 {
   height: 400px;
   text-align: center;
   color: var(--heavenly-blue);
-  background-color: var(--warm-white);
+  background-color: var(--warm-white-transparent);
   background-image: url("background.svg");
   margin: 0;
   text-shadow: var(--warm-white) 0 0 10px;
