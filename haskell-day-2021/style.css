@@ -1,0 +1,158 @@
+:root {
+  --dawn-orange: rgb(235, 97, 56);
+  --heavenly-blue: rgb(52, 99, 168);
+  --early-morning: rgb(132, 138, 183);
+  --blue-shadow: rgb(64, 75,183);
+  --cloud-sea: rgb(205, 223, 239);
+  --warm-white: rgb(246, 234, 210);
+  --warm-white-transparent: rgba(246, 234, 210, 0.6);
+  --dark-blue-shadow: rgb(34, 39, 77);
+  --sakulambda-pink: #fad9e1;
+  --sakulambda-red: white;
+  --sakulambda-green: #767c53;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin-left: 4em;
+}
+p {
+  margin-top: 0.5em;
+}
+article {
+  padding-top: 2em;
+}
+a {
+  color: var(--dawn-orange);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+body {
+  background-color: white;
+  background-image: url("yagasuri.png");
+  background-repeat: repeat;
+  color: black;
+  font-family: san-serif;
+}
+header > *, article > * {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  height: 80px;
+  color: var(--warm-white);
+  background-color: var(--dark-blue-shadow);
+}
+header > nav {
+  height: 100%;
+}
+header > nav > ul {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  font-weight: bold;
+}
+header > nav > ul > li {
+  display: block;
+  margin: 0;
+  height: 100%;
+}
+header > nav > ul > li > a {
+  display: block;
+  margin: 0;
+  height: 100%;
+  width: 5em;
+  color: var(--warm-white);
+}
+header > nav > ul > li > a:hover {
+  background-color: var(--dawn-orange);
+  text-decoration: none;
+}
+header > nav > ul > li > a > div {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+article > p, article > h1, article > h2 {
+  max-width: 616px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+article > h1 {
+  font-size: x-large;
+}
+article > h2 {
+  font-size: large;
+  margin-top: 0.8em;
+}
+#banner {
+  font-family: serif;
+  height: 400px;
+  text-align: center;
+  color: var(--heavenly-blue);
+  background-color: var(--warm-white-transparent);
+  margin: 0;
+  text-shadow: var(--warm-white) 0 0 10px;
+}
+#banner > div {
+  width: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+#banner > div > h1 {
+  font-size: 6em;
+  font-weight: bold;
+  border-bottom: solid 8px var(--dawn-orange);
+}
+#banner > div > ul {
+  font-size: 2.5em;
+  margin-top: 5px;
+  border-bottom: solid 2px var(--dawn-orange);
+}
+#banner > div > ul > li {
+  display: inline;
+  margin: 0;
+}
+#metadata > table > tbody > tr > td.title {
+  font-weight: bold;
+  text-align: center;
+}
+footer {
+  color: var(--warm-white);
+  background-color: var(--dark-blue-shadow);
+  margin-top: 36px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  text-align: center;
+}
+footer > article {
+  padding-top:0;
+}
+footer > article > h1 {
+  font-size: medium;
+}
+footer > article > ul {
+  margin-top: 4px;
+  list-style: none;
+}
+footer > article > ul > li {
+  margin-left: 0;
+}
+#hosted {
+  margin-top: 20px;
+}
+#haskell-jp-logo {
+  width: 160px;
+}
