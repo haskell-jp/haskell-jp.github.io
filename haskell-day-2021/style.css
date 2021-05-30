@@ -19,7 +19,8 @@ li {
   margin-left: 4em;
 }
 p {
-  margin-top: 0.5em;
+    margin-top: 0.5em;
+    line-height: 1.5;
 }
 article {
   padding-top: 2em;
@@ -98,6 +99,12 @@ article > h2 {
 ul > ul {
   padding-left: 24px;
 }
+#call-for-papers > ul {
+    padding: 10px 0;
+}
+#call-for-papers li {
+  padding: 2px 0;
+}
 #banner {
   font-family: serif;
   height: 400px;
@@ -161,13 +168,11 @@ footer > article > ul > li {
 }
 
 #schedule > dl {
-  background-color: rgba(255,255,255,0.7);
   display: flex;
   flex-wrap: wrap;
   padding: 30px 0;
 }
 #schedule > dl > dt {
-  background-color: rgba(0,0,0,0.1);
   width: 30%;
   box-sizing: border-box;
   padding: 10px;
