@@ -66,12 +66,13 @@ header > nav > ul > li {
   display: block;
   margin: 0;
   height: 100%;
+  flex-grow: 1;
+  max-width: 120px;
 }
 header > nav > ul > li > a {
   display: block;
   margin: 0;
   height: 100%;
-  width: 6em;
   color: var(--warm-white);
 }
 header > nav > ul > li > a:hover {
