@@ -19,7 +19,8 @@ li {
   margin-left: 4em;
 }
 p {
-  margin-top: 0.5em;
+    margin-top: 0.5em;
+    line-height: 1.5;
 }
 article {
   padding-top: 2em;
@@ -65,12 +66,13 @@ header > nav > ul > li {
   display: block;
   margin: 0;
   height: 100%;
+  flex-grow: 1;
+  max-width: 120px;
 }
 header > nav > ul > li > a {
   display: block;
   margin: 0;
   height: 100%;
-  width: 5em;
   color: var(--warm-white);
 }
 header > nav > ul > li > a:hover {
@@ -83,7 +85,7 @@ header > nav > ul > li > a > div {
   transform: translateY(-50%);
   text-align: center;
 }
-article > p, article > h1, article > h2 {
+article > p, article > h1, article > h2, article > ul, article > dl {
   max-width: 616px;
   padding-left: 8px;
   padding-right: 8px;
@@ -94,6 +96,15 @@ article > h1 {
 article > h2 {
   font-size: large;
   margin-top: 0.8em;
+}
+ul > ul {
+  padding-left: 24px;
+}
+#call-for-papers > ul {
+    padding: 10px 0;
+}
+#call-for-papers li {
+  padding: 2px 0;
 }
 #banner {
   font-family: serif;
@@ -155,4 +166,21 @@ footer > article > ul > li {
 }
 #haskell-jp-logo {
   width: 160px;
+}
+
+#schedule > dl {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+#schedule > dl > dt {
+  width: 30%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-weight: bold;
+}
+#schedule > dl > dd {
+  width: 70%;
+  box-sizing: border-box;
+  padding: 10px;
 }
