@@ -184,3 +184,52 @@ footer > article > ul > li {
   box-sizing: border-box;
   padding: 10px;
 }
+
+table.tableizer-table {
+    margin-top: 20px;
+    max-width: 600px;
+    border-collapse:  collapse;
+}
+table.tableizer-table th,td {
+    border: solid 1px;
+    padding: 10px 5px;
+}
+table.tableizer-table td {
+    /* word-break: normal; */
+    /* overflow-wrap: break-word; */
+}
+span.action {
+    cursor: pointer;
+    color: #0033cc;
+}
+
+/* modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 10%;
+  background-color: rgba(0,0,0,0.3);
+}
+.modalContent {
+  background-color: #fff;
+  margin: auto;
+  padding: 0 20px 10px 20px;
+  width: 80%;
+  white-space: pre-line;
+}
+.close {
+  color: #888;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  cursor: pointer;
+}
