@@ -185,22 +185,25 @@ footer > article > ul > li {
   padding: 10px;
 }
 
-table.tableizer-table {
-    margin-top: 20px;
-    max-width: 600px;
-    border-collapse:  collapse;
+#presentation > table {
+  margin-top: 20px;
+  max-width: 616px;
+  border-collapse: collapse;
 }
-table.tableizer-table th,td {
-    border: solid 1px;
-    padding: 10px 5px;
+#presentation > table th,
+#presentation > table td {
+  border: solid 1px rgba(0, 0, 0, 0.3);
+  padding: 10px 5px;
 }
-table.tableizer-table td {
-    /* word-break: normal; */
-    /* overflow-wrap: break-word; */
+#presentation > table .time {
+  width: 20%;
+}
+#presentation > table .title {
+  width: 60%;
 }
 span.action {
-    cursor: pointer;
-    color: #0033cc;
+  cursor: pointer;
+  color: #0033cc;
 }
 
 /* modal */
@@ -212,24 +215,29 @@ span.action {
   top: 0;
   width: 100%;
   height: 100%;
-  padding-top: 10%;
   background-color: rgba(0,0,0,0.3);
 }
-.modalContent {
+.modal-content {
   background-color: #fff;
   margin: auto;
-  padding: 0 20px 10px 20px;
-  width: 80%;
-  white-space: pre-line;
+  padding: 20px;
+  margin: 12px;
+  max-width: 540px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.3);
 }
-.close {
+.modal-close {
   color: #888;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
-.close:hover,
-.close:focus {
+.modal-close:hover,
+.modal-close:focus {
   color: #000;
   cursor: pointer;
 }
