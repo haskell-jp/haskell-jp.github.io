@@ -217,16 +217,17 @@ span.action {
   height: 100%;
   background-color: rgba(0,0,0,0.3);
 }
-.modal-content {
-  background-color: #fff;
+.modal-container {
   margin: auto;
-  padding: 20px;
-  margin: 12px;
-  max-width: 540px;
+  max-width: 564px;
   position: relative;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
+}
+.modal-content {
+  background-color: #fff;
+  margin: 12px;
+  padding: 20px;
   border-radius: 5px;
   box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.3);
 }
