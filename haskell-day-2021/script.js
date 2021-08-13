@@ -1,7 +1,10 @@
 const winterland = {
   title: 'Introduction to Z.Haskell',
-  speaker: 'winterland',
-  description: "In the past few years, I've been working on a new engineering toolkit to make writing Haskell applications especially network applications easier, that effort became the Z.Haskell project. It includes new array and slice types build on ByteArray# provided by GHC runtime, UTF8 based text, and a new IO subsystem based on the libuv, In this talk, I will present many details on how do we solve concrete problems in Z.Haskell, and the project's future plan."
+  speaker: 'Winter',
+  description:
+    "In the past few years, I've been working on a new engineering toolkit to make writing Haskell applications especially network applications easier, that effort became the Z.Haskell project. It includes new array and slice types build on ByteArray# provided by GHC runtime, UTF8 based text, and a new IO subsystem based on the libuv, In this talk, I will present many details on how do we solve concrete problems in Z.Haskell, and the project's future plan." +
+    "<h4 >Winterさんについて</h4>" +
+    "北京理工大学07級、浙江大学11級修士（後退学）。著書「魔力Haskell」の他、「Z.Haskell」プロジェクトを通じて多数のパッケージを開発している。"
 };
 const mod_poppo = {
   title: 'GHC の動向 2021',
