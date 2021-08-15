@@ -41,16 +41,69 @@ const mizunashi = {
 
 const modal = document.getElementById('modal');
 const modalContent = document.getElementById('modal-content');
+const modalClose = document.getElementById('modal-close');
+const modalTitle = document.getElementById('modal-title');
+const modalSpeaker = document.getElementById('modal-speaker')
+const modalDescription = document.getElementById('modal-description');
 
-const openModal = function(data) {
-  modal.style.display = 'block';
-  document.getElementById('modal-title').innerHTML = data.title;
-  document.getElementById('modal-speaker').textContent = data.speaker;
-  document.getElementById('modal-description').innerHTML = data.description;
+const timetable_mod_poppo = document.getElementById('timetable-mod_poppo');
+const timetable_fumieval = document.getElementById('timetable-fumieval');
+const timetable_チェシャ猫 = document.getElementById('timetable-チェシャ猫');
+const timetable_中嶋大嗣 = document.getElementById('timetable-中嶋大嗣');
+const timetable_sakaguchi = document.getElementById('timetable-sakaguchi');
+const timetable_岡本和樹 = document.getElementById('timetable-岡本和樹');
+const timetable_山本悠滋 = document.getElementById('timetable-山本悠滋');
+const timetable_mizunashi = document.getElementById('timetable-mizunashi');
+
+let openedItem = null;
+
+const openModal = (data) => {
+  return (event) => {
+    if (event instanceof KeyboardEvent && (event.repeat || (event.code !== 'Enter' && event.code !== 'Space'))) {
+      return;
+    }
+    event.preventDefault();
+    openedItem = event.target;
+    modal.style.display = 'block';
+    modalTitle.innerHTML = data.title;
+    modalSpeaker.textContent = data.speaker;
+    modalDescription.innerHTML = data.description;
+    modalClose.focus();
+  };
 };
 
-const closeModal = function() {
+const closeModal = (event) => {
+  if (event instanceof KeyboardEvent && (event.repeat || (event.code !== 'Enter' && event.code !== 'Space'))) {
+    return;
+  }
+  event.preventDefault();
   modal.style.display = 'none';
+  openedItem.focus();
+  openedItem = null;
 };
+
+timetable_mod_poppo.onclick = openModal(mod_poppo);
+timetable_mod_poppo.onkeydown = openModal(mod_poppo);
+timetable_fumieval.onclick = openModal(fumieval);
+timetable_fumieval.onkeydown = openModal(fumieval);
+timetable_チェシャ猫.onclick = openModal(チェシャ猫);
+timetable_チェシャ猫.onkeydown = openModal(チェシャ猫);
+timetable_中嶋大嗣.onclick = openModal(中嶋大嗣);
+timetable_中嶋大嗣.onkeydown = openModal(中嶋大嗣);
+timetable_sakaguchi.onclick = openModal(sakaguchi);
+timetable_sakaguchi.onkeydown = openModal(sakaguchi);
+timetable_岡本和樹.onclick = openModal(岡本和樹);
+timetable_岡本和樹.onkeydown = openModal(岡本和樹);
+timetable_山本悠滋.onclick = openModal(山本悠滋);
+timetable_山本悠滋.onkeydown = openModal(山本悠滋);
+timetable_mizunashi.onclick = openModal(mizunashi);
+timetable_mizunashi.onkeydown = openModal(mizunashi);
+
+modal.onclick = closeModal;
+modal.onkeydown = closeModal;
 
 modalContent.onclick = (event) => { event.stopPropagation(); };
+modalContent.onkeydown = (event) => { event.stopPropagation(); };
+
+modalClose.onclick = closeModal;
+modalClose.onkeydown = closeModal;

@@ -201,7 +201,7 @@ footer > article > ul > li {
 #presentation > table .title {
   width: 60%;
 }
-span.action {
+a.action {
   cursor: pointer;
   color: #0033cc;
 }
@@ -235,9 +235,11 @@ span.action {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  text-decoration: none;
 }
 .modal-close:hover,
 .modal-close:focus {
   color: #000;
   cursor: pointer;
+  text-decoration: none;
 }

@@ -52,14 +52,14 @@
           <thead><tr><th class='time'>時刻</th><th class='title'>タイトル</th><th>スピーカー</th></tr></thead><tbody>
             <tr><td>13:00～13:10</td><td class="title">Haskell Day の紹介</td><td></td></tr>
             <tr><td>13:10～13:55</td><td class="title">招待講演</td><td>&#x2728;豪華ゲスト</td></tr>
-            <tr><td>14:00～14:15</td><td class="title"><span class="action" onClick="openModal(mod_poppo)">GHC の動向 2021</span></td><td>mod_poppo</td></tr>
-            <tr><td>14:20～14:50</td><td class="title"><span class="action" onClick="openModal(fumieval)">Haskell は別言語になりました――RecordDotSyntax と NoFieldSelectors</span></td><td>fumieval</td></tr>
-            <tr><td>14:55～15:10</td><td class="title"><span class="action" onClick="openModal(チェシャ猫)">Asterius による WebAssembly 開発（仮）</span></td><td>チェシャ猫</td></tr>
-            <tr><td>15:15～15:45</td><td class="title"><span class="action" onClick="openModal(中嶋大嗣)">GraphQL と Haskell</span></td><td>中嶋大嗣</td></tr>
-            <tr><td>15:50～16:20</td><td class="title"><span class="action" onClick="openModal(sakaguchi)"><code>take k (sort xs)</code> in Haskell has O(n + k log k) time complexity</span></td><td>Kazuhiko Sakaguchi</td></tr>
-            <tr><td>16:25～16:55</td><td class="title"><span class="action" onClick="openModal(岡本和樹)">線形型の刹那的不変データ構造への利用</span></td><td>岡本和樹</td></tr>
-            <tr><td>17:00～17:15</td><td class="title"><span class="action" onClick="openModal(山本悠滋)">slack-log の紹介</span></td><td>山本悠滋</td></tr>
-            <tr><td>17:20～17:50</td><td class="title"><span class="action" onClick="openModal(mizunashi)">GHC による Haskell プログラムの動かし方</span></td><td>Mizunashi Mana</td></tr>
+            <tr><td>14:00～14:15</td><td class="title"><a id="timetable-mod_poppo" class="action" tabindex="0">GHC の動向 2021</a></td><td>mod_poppo</td></tr>
+            <tr><td>14:20～14:50</td><td class="title"><a id="timetable-fumieval" class="action" tabindex="0">Haskell は別言語になりました――RecordDotSyntax と NoFieldSelectors</a></td><td>fumieval</td></tr>
+            <tr><td>14:55～15:10</td><td class="title"><a id="timetable-チェシャ猫" class="action" tabindex="0">Asterius による WebAssembly 開発（仮）</a></td><td>チェシャ猫</td></tr>
+            <tr><td>15:15～15:45</td><td class="title"><a id="timetable-中嶋大嗣" class="action" tabindex="0">GraphQL と Haskell</a></td><td>中嶋大嗣</td></tr>
+            <tr><td>15:50～16:20</td><td class="title"><a id="timetable-sakaguchi" class="action" tabindex="0"><code>take k (sort xs)</code> in Haskell has O(n + k log k) time complexity</a></td><td>Kazuhiko Sakaguchi</td></tr>
+            <tr><td>16:25～16:55</td><td class="title"><a id="timetable-岡本和樹" class="action" tabindex="0">線形型の刹那的不変データ構造への利用</a></td><td>岡本和樹</td></tr>
+            <tr><td>17:00～17:15</td><td class="title"><a id="timetable-山本悠滋" class="action" tabindex="0">slack-log の紹介</a></td><td>山本悠滋</td></tr>
+            <tr><td>17:20～17:50</td><td class="title"><a id="timetable-mizunashi" class="action" tabindex="0">GHC による Haskell プログラムの動かし方</a></td><td>Mizunashi Mana</td></tr>
             <tr><td>17:50～17:55</td><td class="title">クロージング</td><td></td></tr>
         </tbody></table>
         <p>日程の詳細は<a href="#schedule">スケジュール</a>をご覧ください。</p>
@@ -147,9 +147,9 @@
       <p id="hosted"><a href="https://haskell.jp/"><img src="/haskell-day-2021/haskell-jp.svg" id="haskell-jp-logo" /></a></p>
     </footer>
 
-    <div id="modal" class="modal" onclick="closeModal()">
+    <div id="modal" class="modal">
       <div id="modal-content" class="modal-content">
-        <span class="material-icons modal-close" onclick="closeModal()">close</span>
+        <a id="modal-close" class="material-icons modal-close" tabindex="0">close</a>
         <h3 id="modal-title"></h3>
         <p id="modal-speaker"></p>
         <hr/>
