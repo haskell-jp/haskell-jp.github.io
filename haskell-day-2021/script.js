@@ -40,8 +40,9 @@ const mizunashi = {
 };
 
 const modal = document.getElementById('modal');
+const modalContent = document.getElementById('modal-content');
 
-const openModal = function (data) {
+const openModal = function(data) {
   modal.style.display = 'block';
   document.getElementById('modal-title').innerHTML = data.title;
   document.getElementById('modal-speaker').textContent = data.speaker;
@@ -51,3 +52,5 @@ const openModal = function (data) {
 const closeModal = function() {
   modal.style.display = 'none';
 };
+
+modalContent.onclick = (event) => { event.stopPropagation(); };
