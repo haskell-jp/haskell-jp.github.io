@@ -1,4 +1,4 @@
-const winterland = {
+const Winter = {
   title: 'Introduction to Z.Haskell',
   speaker: 'Winter',
   description:
