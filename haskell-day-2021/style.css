@@ -241,3 +241,7 @@ span.action {
   color: #000;
   cursor: pointer;
 }
+#modal-description h4 {
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+}
