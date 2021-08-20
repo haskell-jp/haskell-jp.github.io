@@ -51,7 +51,7 @@
         <table>
           <thead><tr><th class='time'>時刻</th><th class='title'>タイトル</th><th>スピーカー</th></tr></thead><tbody>
             <tr><td>13:00～13:10</td><td class="title">Haskell Day の紹介</td><td></td></tr>
-            <tr><td>13:10～13:55</td><td class="title">招待講演</td><td>&#x2728;豪華ゲスト</td></tr>
+            <tr><td>13:10～13:55</td><td class="title"><a id="timetable-winter" class="action" tabindex="0">Introduction to Z.Haskell</span></td><td>Winter</td></tr>
             <tr><td>14:00～14:15</td><td class="title"><a id="timetable-mod_poppo" class="action" tabindex="0">GHC の動向 2021</a></td><td>mod_poppo</td></tr>
             <tr><td>14:20～14:50</td><td class="title"><a id="timetable-fumieval" class="action" tabindex="0">Haskell は別言語になりました――RecordDotSyntax と NoFieldSelectors</a></td><td>fumieval</td></tr>
             <tr><td>14:55～15:10</td><td class="title"><a id="timetable-チェシャ猫" class="action" tabindex="0">Asterius による WebAssembly 開発（仮）</a></td><td>チェシャ猫</td></tr>
@@ -148,14 +148,16 @@
     </footer>
 
     <div id="modal" class="modal">
-      <div id="modal-content" class="modal-content">
-        <a id="modal-close" class="material-icons modal-close" tabindex="0">close</a>
-        <h3 id="modal-title"></h3>
-        <p id="modal-speaker"></p>
-        <hr/>
-        <p id="modal-description"></p>
+      <div class="modal-container">
+        <div id="modal-content" class="modal-content">
+          <a id="modal-close" class="material-icons modal-close" tabindex="0">close</a>
+          <h3 id="modal-title"></h3>
+          <p id="modal-speaker"></p>
+          <hr/>
+          <p id="modal-description"></p>
+        </div>
       </div>
     </div>
-    <script src="/haskell-day-2021/script.js"></script>
+    <script src="/haskell-day-2021/script.js?v=2021-08-17"></script>
   </body>
 </html>

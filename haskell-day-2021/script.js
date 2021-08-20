@@ -1,3 +1,11 @@
+const Winter = {
+  title: 'Introduction to Z.Haskell',
+  speaker: 'Winter',
+  description:
+    "In the past few years, I've been working on a new engineering toolkit to make writing Haskell applications especially network applications easier, that effort became the Z.Haskell project. It includes new array and slice types build on ByteArray# provided by GHC runtime, UTF8 based text, and a new IO subsystem based on the libuv, In this talk, I will present many details on how do we solve concrete problems in Z.Haskell, and the project's future plan." +
+    "<h4 >Winterさんについて</h4>" +
+    "北京理工大学07級、浙江大学11級修士（後退学）。著書「魔力Haskell」の他、「Z.Haskell」プロジェクトを通じて多数のパッケージを開発している。"
+};
 const mod_poppo = {
   title: 'GHC の動向 2021',
   speaker: 'mod_poppo',
@@ -46,6 +54,7 @@ const modalTitle = document.getElementById('modal-title');
 const modalSpeaker = document.getElementById('modal-speaker')
 const modalDescription = document.getElementById('modal-description');
 
+const timetable_winter = document.getElementById('timetable-winter');
 const timetable_mod_poppo = document.getElementById('timetable-mod_poppo');
 const timetable_fumieval = document.getElementById('timetable-fumieval');
 const timetable_チェシャ猫 = document.getElementById('timetable-チェシャ猫');
@@ -82,6 +91,8 @@ const closeModal = (event) => {
   openedItem = null;
 };
 
+timetable_winter.onclick = openModal(Winter);
+timetable_winter.onkeydown = openModal(Winter);
 timetable_mod_poppo.onclick = openModal(mod_poppo);
 timetable_mod_poppo.onkeydown = openModal(mod_poppo);
 timetable_fumieval.onclick = openModal(fumieval);
