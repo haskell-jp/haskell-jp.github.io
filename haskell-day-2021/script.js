@@ -16,11 +16,6 @@ const fumieval = {
   speaker: 'fumieval',
   description: 'Haskell は、レコード（構造体）を定義すると、各フィールドにアクセスするための関数が定義されます。しかし、フィールド名が衝突したり、それを避けるために名前が冗長になったりするため、レコードが使いにくいという評価を受けることも。GHC 9.2 では、その問題の解決策として NoFieldSelectors と RecordDotSyntax という二つの言語拡張が導入されました。それらの動機、仕組み、使い方について解説します。'
 };
-const チェシャ猫 = {
-  title: 'Asterius による WebAssembly 開発（仮）',
-  speaker: 'チェシャ猫',
-  description: 'Asterius を用いて Haskell のソースコードを WebAssembly にコンパイルして実行する流れを解説します。動きのあるデモを発表の主体とし、中間言語やコンパイラの実装などには触れない予定です。WebAssembly 自体に関する予備知識も仮定しません。Haskell 自体の文法に関する予備知識は仮定します。'
-};
 const 中嶋大嗣 = {
   title: 'GraphQL と Haskell',
   speaker: '中嶋大嗣',
@@ -57,7 +52,6 @@ const modalDescription = document.getElementById('modal-description');
 const timetable_winter = document.getElementById('timetable-winter');
 const timetable_mod_poppo = document.getElementById('timetable-mod_poppo');
 const timetable_fumieval = document.getElementById('timetable-fumieval');
-const timetable_チェシャ猫 = document.getElementById('timetable-チェシャ猫');
 const timetable_中嶋大嗣 = document.getElementById('timetable-中嶋大嗣');
 const timetable_sakaguchi = document.getElementById('timetable-sakaguchi');
 const timetable_岡本和樹 = document.getElementById('timetable-岡本和樹');
@@ -97,8 +91,6 @@ timetable_mod_poppo.onclick = openModal(mod_poppo);
 timetable_mod_poppo.onkeydown = openModal(mod_poppo);
 timetable_fumieval.onclick = openModal(fumieval);
 timetable_fumieval.onkeydown = openModal(fumieval);
-timetable_チェシャ猫.onclick = openModal(チェシャ猫);
-timetable_チェシャ猫.onkeydown = openModal(チェシャ猫);
 timetable_中嶋大嗣.onclick = openModal(中嶋大嗣);
 timetable_中嶋大嗣.onkeydown = openModal(中嶋大嗣);
 timetable_sakaguchi.onclick = openModal(sakaguchi);
