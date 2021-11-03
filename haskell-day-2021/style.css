@@ -244,7 +244,40 @@ a.action {
   cursor: pointer;
   text-decoration: none;
 }
+.modal-speaker-container {
+    padding: 20px 0 20px 0;
+    display: flex;
+    align-items: center;
+}
+#modal-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  margin-right: 10PX;
+}
+#modal-speaker {
+    padding-bottom: 4px;
+}
+.modal-speaker-twitter {
+    padding-left: 5px;
+}
+.modal-speaker-twitter svg {
+    height: 1em;
+}
+#modal-description {
+    max-height: 60%;
+    overflow-y: auto;
+}
 #modal-description h4 {
   padding-top: 1.5em;
   padding-bottom: 0.5em;
+}
+.modal-description-container a.link-doc {
+    border: 1px solid var(--dawn-orange);
+    border-radius: 15px;
+    display: inline-block;
+    padding: 6px;
+    height: 22px;
+    margin: 5px;
+}
 }
