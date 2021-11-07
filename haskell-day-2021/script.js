@@ -17,6 +17,8 @@ const pages = {
     description:
       "Haskell の処理系である GHC は現在も活発に開発が行われています。この発表では GHC の最近の開発状況や、直近あるいは将来リリースされる GHC 9.x での新機能・変更点を簡単に紹介します。",
     youtube: "https://www.youtube.com/watch?v=haZl-q6mfyk&t=1680s",
+    slide:
+      "https://drive.google.com/file/d/1kPEGux6w_9GgTziRwfDCPH5fRea_vhls/view",
   },
   fumieval: {
     title: "Haskell は別言語になりました――RecordDotSyntax と NoFieldSelectors",
@@ -34,6 +36,7 @@ const pages = {
     description:
       "GraphQL の入門<br>Haskell による GraphQL API の実装を目的に、関連ライブラリの紹介及び、サンプルを交えた実装の解説を行います。<br/>さらにN+1問題の解決を試みます。",
     youtube: "https://www.youtube.com/watch?v=haZl-q6mfyk&t=3480s",
+    slide: "https://speakerdeck.com/daishi/graphqltohaskell",
   },
   sakaguchi: {
     title:
@@ -43,6 +46,8 @@ const pages = {
       'In this talk, we prove that non-tail-recursive mergesort (e.g., <code>Data.List.sort</code> of GHC) is an asymptotically optimal incremental sorting algorithm <a href="https://doi.org/10.1137/1.9781611972863.16">[Paredes and Navarro 2006]</a> in the call-by-need (lazy) evaluation strategy. That is to say, computing the first <code>k</code> smallest (or largest) elements of a list <code>xs</code> of length <code>n</code> by <code>take k (sort xs)</code> costs O(n + k log k) time. On the other hand, tail-recursive mergesort (e.g., <code>List.stable_sort</code> of OCaml) is more suited for the call-by-value evaluation strategy in the sense that it does not consume the call stack linearly and thus prevents stack overflow. Therefore, the best mergesort function depends on the situation, in particular, the evaluation strategy and whether it should be incremental or not. To prove the correctness of these mergesort functions, we present a methodology to characterize and verify stable sort functions in the Coq proof assistant using the parametricity translation <a href="https://doi.org/10.4230/LIPIcs.CSL.2012.381">[Keller and Lasson 2012]</a>.<br/><br/>本講演では、非末尾再帰マージソート（GHC の <code>Data.List.sort</code> など）が必要呼び（遅延）評価戦略において漸近的に最適なインクリメンタルソートアルゴリズム <a href="https://doi.org/10.1137/1.9781611972863.16">[Paredes and Navarro 2006]</a> となることを証明する。すなわち、長さ <code>n</code> のリスト <code>xs</code> の最小（もしくは最大） <code>k</code> 要素を <code>take k (sort xs)</code> で求めるのに要する時間計算量は O(n + k log k) である。一方で、末尾再帰マージソート（OCaml の <code>List.stable_sort</code> など）はコールスタックを線形に消費せずスタックオーバーフローを避けるという点において、値呼び評価戦略により適している。したがって、最適なマージソート関数は評価戦略やそれがインクリメンタルな計算を許すべきかどうか等によって異なる。これらのマージソート関数の正しさを証明するため、パラメトリシティ変換 <a href="https://doi.org/10.4230/LIPIcs.CSL.2012.381">[Keller and Lasson 2012]</a> を用いて対話的定理証明器 Coq 上で安定ソート関数を特徴付け検証する方法を提案する。<h4>Supplementary material:</h4> <ul><li><a href="https://github.com/pi8027/stablesort">pi8027/stablesort</a></li></ul>',
     twitter: "pi8027",
     youtube: "https://www.youtube.com/watch?v=haZl-q6mfyk&t=5281s",
+    slide:
+      "http://www.logic.cs.tsukuba.ac.jp/~sakaguchi/slides/haskell-day-2021.pdf",
   },
   岡本和樹: {
     title: "線形型の刹那的不変データ構造への利用",
@@ -52,6 +57,7 @@ const pages = {
     description:
       "GHC 9.0 で線形型が導入されました<br>線形型は「値が一度しか使われない」ことを保証するものです<br>これを使用して計算量の関係から1回しか値の使えない「刹那的データ構造」を型安全にする方法を説明します",
     youtube: "https://www.youtube.com/watch?v=haZl-q6mfyk&t=6781s",
+    slide: "http://slide.kakkun61.com/linear-ephemeral-data-structure/",
   },
   山本悠滋: {
     title: "slack-log の紹介",
@@ -59,8 +65,10 @@ const pages = {
     icon: "./icon/igrep.png",
     twitter: "igrep",
     description:
-      'Slack の発言を保存するバッチアプリケーション、<a href="https://github.com/haskell-jp/slack-log/">slack-log</a> について開発の動機や実装、設計、使用するライブラリーの紹介、今後加えたい修正についてお話しします。',
+      'Slack の発言を保存するバッチアプリケーション、<a href="https://github.com/haskell-jp/slack-log/">slack-log</a> について開発の動機や実装、設計、使用するライブラリーの紹介、今後加えたい修正についてお話しします。<br/><br/><a href="https://the.igreque.info/slides/2021-11-07-haskell-day-2021-slack-log-en.html">Slides(English)</a>',
     youtube: "https://www.youtube.com/watch?v=haZl-q6mfyk&t=8880s",
+    slide:
+      "https://the.igreque.info/slides/2021-11-07-haskell-day-2021-slack-log.html",
   },
   mizunashi: {
     title: "GHC による Haskell プログラムの動かし方",
@@ -70,6 +78,8 @@ const pages = {
     description:
       "Haskell は他の言語にない意味論的特徴を多く持っています．そのため，Haskell の標準的実装 GHC でも，Haskell プログラムを動かす上で，他の言語では見られないような様々な工夫が施されています．この工夫を知ることは，Haskell プログラムへの理解を深める上でも，プログラムの動作を調査する上でも役に立つでしょう．この発表では，GHC が Haskell プログラムをどのように動かすのかについて，基本的な概要を紹介します．",
     youtube: "https://www.youtube.com/watch?v=haZl-q6mfyk&t=10380s",
+    slide:
+      "https://mizunashi-mana.github.io/slides/2021/haskell-day-2021-how-to-run-haskell-by-ghc.pdf",
   },
 };
 
